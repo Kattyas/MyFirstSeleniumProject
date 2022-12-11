@@ -30,17 +30,17 @@ public class WishListTest {
 
 
 
-        WebElement adToWish = driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col2-left-layout > div > div.col-main > div.my-account > div.my-wishlist > ul > li > ul > li > span"));
+        WebElement adToWish = driver.findElement(By.cssSelector(".success-msg span"));
         String expectedText = "Slim fit Dobby Oxford Shirt has been added to your wishlist. Click here to continue shopping.";
         String actualText = adToWish.getText();
 
         Assert.assertEquals(expectedText,actualText);
 
     }
-//    @After
-//    public void close(){
-//       driver.close();
-//    }
+    @After
+    public void close(){
+       driver.close();
+    }
 
 
 
