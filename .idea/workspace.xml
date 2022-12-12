@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b891e22-de90-4449-b9a3-00c638c762e1" name="Changes" comment="MyFirstSeleniumProject">
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SelectoriTema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SelectoriTema.java" afterDir="false" />
     </list>
@@ -49,12 +50,23 @@
       <recent name="C:\JavaProjects\MyFirstSeleniumProject\MyFirstSeleniumProject\resurces" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SelectoriTema.proceedToCheck">
-    <configuration name="SelectoriTema" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyAccount.adresses">
+    <configuration name="MyAccount.accountInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SelectoriTema" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="MyAccount" />
+      <option name="METHOD_NAME" value="accountInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyAccount.adresses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyFirstSeleniumProject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyAccount" />
+      <option name="METHOD_NAME" value="adresses" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -79,21 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectoriTema.searchIcon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectoriTema.sortBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyFirstSeleniumProject" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelectoriTema" />
-      <option name="METHOD_NAME" value="searchIcon" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WishListTest.addToWishlistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyFirstSeleniumProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WishListTest" />
-      <option name="METHOD_NAME" value="addToWishlistTest" />
+      <option name="METHOD_NAME" value="sortBy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyAccount.adresses" />
+        <item itemvalue="JUnit.MyAccount.accountInfo" />
+        <item itemvalue="JUnit.SelectoriTema.sortBy" />
         <item itemvalue="JUnit.SelectoriTema.proceedToCheck" />
         <item itemvalue="JUnit.SelectoriTema.deleteFromKart" />
-        <item itemvalue="JUnit.SelectoriTema.searchIcon" />
-        <item itemvalue="JUnit.SelectoriTema" />
-        <item itemvalue="JUnit.WishListTest.addToWishlistTest" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670769935740</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MyFirstSeleniumProject">
+      <created>1670829305094</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670829305094</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

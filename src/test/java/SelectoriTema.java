@@ -61,14 +61,16 @@ public class SelectoriTema {
 
         Assert.assertEquals(expectedText,actualText);
     }
+    @Test
+    public void sortBy() {
+        driver.findElement(By.cssSelector(".nav-5 .has-children")).click();
+        driver.findElement(By.cssSelector(".toolbar .sort-by select")).click();
+    }
 
-
-
-
-//    @After
-//    public void close(){
-//        driver.close();
-//    }
+    @After
+    public void close(){
+        driver.close();
+    }
 
 
 
