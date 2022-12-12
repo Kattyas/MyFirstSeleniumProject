@@ -29,9 +29,42 @@ public class SelectoriTema {
         String actualText = searchOk.getText();
 
         Assert.assertEquals(expectedText,actualText);
+    }
+    @Test
+    public void deleteFromKart(){
+        driver.findElement(By.cssSelector(".nav-5 .has-children")).click();
+        driver.findElement(By.cssSelector(".product-info  .button")).click();
+        driver.findElement(By.cssSelector(".option-blue .swatch-label")).click();
+        driver.findElement(By.cssSelector(".option-xs .swatch-label")).click();
+        driver.findElement(By.cssSelector(".add-to-cart .button")).click();
+        driver.findElement(By.cssSelector(".a-center .btn-remove")).click();
 
+        WebElement searchOk = driver.findElement(By.cssSelector(".page-title h1"));
+        String expectedText = "SHOPPING CART IS EMPTY";
+        String actualText = searchOk.getText();
+
+        Assert.assertEquals(expectedText,actualText);
 
     }
+    @Test
+    public void proceedToCheck() {
+        driver.findElement(By.cssSelector(".nav-5 .has-children")).click();
+        driver.findElement(By.cssSelector(".product-info  .button")).click();
+        driver.findElement(By.cssSelector(".option-blue .swatch-label")).click();
+        driver.findElement(By.cssSelector(".option-xs .swatch-label")).click();
+        driver.findElement(By.cssSelector(".add-to-cart .button")).click();
+        driver.findElement(By.cssSelector(".cart-totals .button")).click();
+
+        WebElement searchOk = driver.findElement(By.cssSelector(".page-title h1"));
+        String expectedText = "CHECKOUT";
+        String actualText = searchOk.getText();
+
+        Assert.assertEquals(expectedText,actualText);
+    }
+
+
+
+
 //    @After
 //    public void close(){
 //        driver.close();
