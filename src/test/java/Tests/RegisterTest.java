@@ -1,3 +1,9 @@
+package Tests;
+
+import Pages.AccountPage;
+import Pages.HomePage;
+import Pages.LoginPage;
+import Pages.RegisterPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,14 +25,19 @@ public class RegisterTest {
     @Test
     public void registerTest(){
 
-        driver.findElement(By.cssSelector(".skip-account .label")).click();
-        driver.findElement(By.cssSelector("[title='Register']")).click();
-        driver.findElement(By.id("firstname")).sendKeys("Kata");
-        driver.findElement(By.id("lastname")).sendKeys("Katty");
-        driver.findElement(By.id("email_address")).sendKeys("A@yahoo.com");
-        driver.findElement(By.id("password")).sendKeys("1234567890");
-        driver.findElement(By.id("confirmation")).sendKeys("1234567890");
-        driver.findElement(By.id("is_subscribed")).click();
+        HomePage homePage = new HomePage(driver);
+        RegisterPage registerPage = new RegisterPage(driver);
+
+
+        homePage.clickAccountButton();
+        homePage.clickRegisterLink();
+        registerPage.setNameField("Kata");
+        registerPage.setLastNameField("Katty");
+        registerPage.setEmailField("A@yahoo.com");
+        registerPage.setPassField("1234567890");
+        registerPage.setConfPassField("1234567890");
+        registerPage.clickSubsButton();
+
 
     }
     @After

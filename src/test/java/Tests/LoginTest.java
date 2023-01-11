@@ -1,3 +1,8 @@
+package Tests;
+
+import Pages.AccountPage;
+import Pages.HomePage;
+import Pages.LoginPage;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -19,18 +24,17 @@ public class LoginTest {
     }
     @Test
     public void loginWithValidData(){
-        driver.findElement(By.cssSelector(".skip-account .label")).click();
-        driver.findElement(By.cssSelector("[title='Log In']")).click();
-        driver.findElement(By.id("email")).sendKeys("cosmin@fasttrackit.org");
-        driver.findElement(By.id("pass")).sendKeys("123456");
-        driver.findElement(By.id("send2")).click();
 
-        WebElement welcomeTextElement = driver.findElement(By.cssSelector(".hello strong"));
+        HomePage homePage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        AccountPage accountPage = new AccountPage(driver);
 
-        String expectedText = "Hello, Cosmin Fast!";
-        String actualText = welcomeTextElement.getText();
-
-        Assert.assertEquals(expectedText,actualText);
+        homePage.clickAccountButton();
+        homePage.clickLoginLink();
+        loginPage.setEmailField("cosmin@fasttrackit.org");
+        loginPage.setPasswordField("123456");
+        loginPage.clickLoginButton();
+        Assert.assertEquals("Hello, Cosmin Fast!", accountPage.getWelcomeText());
 
 
     }
